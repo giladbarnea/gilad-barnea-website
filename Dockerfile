@@ -11,7 +11,7 @@ WORKDIR /app
 
 # Install backend dependencies
 COPY backend/pyproject.toml backend/uv.lock ./backend/
-RUN pip install uv && cd backend && uv sync
+RUN pip install uv && cd backend && uv sync --all-extras
 
 # Copy backend code
 COPY backend/ ./backend/
