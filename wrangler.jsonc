@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gilad-barnea-website",
+  "compatibility_date": "2026-08-11",
+  "account_id": "617839bc8af5a2c9d0ce14da4ce59cd1",
+  // Only this directory ships. Nothing outside it can leak into the
+  // deployment, which is why it is not the repo root.
+  "assets": {
+    "directory": "public"
+  },
+  "routes": [
+    { "pattern": "gilad-barnea.com", "custom_domain": true },
+    { "pattern": "www.gilad-barnea.com", "custom_domain": true }
+  ]
+}
