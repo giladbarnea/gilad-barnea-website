@@ -29,7 +29,7 @@ Open http://localhost:8765. Serve over HTTP, not `file://`, because the logo ani
 npx wrangler deploy
 ```
 
-`git push` does not deploy. The two are separate.
+`git push` to `main` deploys automatically via GitHub Actions (`.github/workflows/deploy.yml`), which runs `npx wrangler deploy` with the `CLOUDFLARE_API_KEY` and `CLOUDFLARE_EMAIL` repo secrets. To deploy by hand, run the same command locally.
 
 Cloudflare caches at the edge, so a plain refresh can show you the old page. Hard-refresh, or add `?v=2` to the URL.
 
