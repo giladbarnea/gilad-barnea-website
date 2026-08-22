@@ -12,7 +12,7 @@ public/updates/index.html  /updates
 public/css/site.css        all styling
 public/js/                 jQuery + Webflow runtime, vendored
 public/fonts/              CMU Serif, SF Mono, self-hosted
-public/img/                logo animation, favicons, OG image
+public/img/                favicons, OG image
 ```
 
 ## Preview locally
@@ -21,7 +21,7 @@ public/img/                logo animation, favicons, OG image
 python3 -m http.server -d public 8765
 ```
 
-Open http://localhost:8765. Serve over HTTP, not `file://`, because the logo animation is loaded with `fetch()`.
+Open http://localhost:8765.
 
 ## Deploy
 
