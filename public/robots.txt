@@ -1,2 +1,7 @@
+User-agent: facebookexternalhit
+Allow: /privacy/
+Allow: /data-deletion/
+Disallow: /
+
 User-agent: *
 Disallow: /
