@@ -8,3 +8,5 @@ artifacts/
 # silently dropped this from the first commit and 404'd the deployed site.
 !js/jquery.min.js
 
+
+.worktrees/
